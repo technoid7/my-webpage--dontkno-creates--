@@ -6,5 +6,5 @@ const W=[
 const g=document.getElementById('grid'),q=document.getElementById('q'),f=document.getElementById('f');
 [...new Set(W.map(w=>w.k))].forEach(k=>f.add(new Option(k,k)));
 function draw(){const s=q.value.toLowerCase(),c=f.value;const r=W.filter(w=>(!c||w.k===c)&&(w.t+w.d+w.k).toLowerCase().includes(s));
-g.innerHTML=r.length?r.map((w,i)=>`<a class="card" style="animation-delay:${i*70}ms" href="${w.u}" target="_blank" rel="noopener"><div class="ic" style="background:${w.c}"></div><div><b>${w.t}</b><p>${w.d}</p><div class="meta">${w.k} · ♥ ${w.a} · ◉ ${w.v} views</div></div><span class="btn">View on Behance</span></a>`).join(''):'<p class="empty">No projects match.</p>'}
+g.innerHTML=r.length?r.map((w,i)=>`<a class="card" style="animation-delay:${i*70}ms" href="${w.u}" target="_blank" rel="noopener" aria-label="${w.t}: view case study on Behance (opens in new tab)"><div class="ic" style="background:${w.c}"></div><div><b>${w.t}</b><p>${w.d}</p><div class="meta">${w.k} · ♥ ${w.a} · ◉ ${w.v} views</div></div><span class="btn full">View on Behance</span></a>`).join(''):'<p class="empty">No projects match.</p>'}
 q.oninput=f.onchange=draw;draw();

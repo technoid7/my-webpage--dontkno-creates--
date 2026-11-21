@@ -3,18 +3,24 @@
 <head>
 <meta charset="utf-8">
 <title>The dontkno Brief — dontkno creates</title>
+<meta name="description" content="Short, opinionated newsletters on tech and gaming.">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
 <div class="bg"><img src="portrait.jpg" alt=""></div>
-<header><a class="brand" href="index.html"><img src="portrait.jpg" alt="Oghenetega">dontkno creates.</a><nav><a href="index.html">Portfolio</a><a href="newsletter.html" class="on">Newsletter</a><a href="#support">Contact</a></nav></header>
-<main>
-<section><h1>The dontkno Brief</h1><p class="sub">Newsletters on tech and gaming: short, opinionated reads from a designer’s point of view.</p><div class="tabs" id="tabs"></div></section>
-<section><div class="grid" id="issues"></div><p class="note" style="margin-top:14px">These are sample issues. Swap in your own writing anytime.</p></section>
+<header><a class="brand" href="index.html"><img src="portrait.jpg" alt="">dontkno creates.</a><nav aria-label="Main"><a href="index.html">Portfolio</a><a href="newsletter.html" class="on" aria-current="page">Newsletter</a><a href="#support">Contact</a></nav></header>
+<main id="main">
+<section><h1>The dontkno Brief</h1><p class="sub">Newsletters on tech and gaming: short, opinionated reads from a designer’s point of view.</p><div class="tabs" id="tabs" role="group" aria-label="Filter issues"></div></section>
+<section><div class="grid" id="issues" aria-live="polite"></div></section>
 </main>
 <footer class="foot"><section class="two" id="usage"><div><h2>Usage</h2><p>Pick a project, open the case study, and browse the full screens. Appreciations and views come from Behance.</p></div>
-<div id="support"><h2>Contact</h2><p>Available for freelance and full-time work. Reach me on any of the channels below, or on <a href="https://www.behance.net/cytum-designs" target="_blank" rel="noopener">Behance</a>.</p><div class="chips"><a href="https://www.tiktok.com/@dontkno825" target="_blank" rel="noopener">TikTok ↗</a><a href="https://www.youtube.com/@dontkno825" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.instagram.com/dontkno825" target="_blank" rel="noopener">Instagram ↗</a><a href="https://twitter.com/shadowy_morn" target="_blank" rel="noopener">Twitter ↗</a><a href="https://www.behance.net/cytum-designs" target="_blank" rel="noopener">Behance ↗</a></div></div></section></footer>
+<div id="support"><h2>Contact</h2><p>Available for freelance and full-time work. Reach me on any of the channels below.</p><div class="chips"><a href="https://www.tiktok.com/@dontkno825" target="_blank" rel="noopener" aria-label="dontkno on TikTok (opens in new tab)">TikTok <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/@dontkno825" target="_blank" rel="noopener" aria-label="dontkno on YouTube (opens in new tab)">YouTube <span aria-hidden="true">↗</span></a><a href="https://www.instagram.com/dontkno825" target="_blank" rel="noopener" aria-label="dontkno on Instagram (opens in new tab)">Instagram <span aria-hidden="true">↗</span></a><a href="https://twitter.com/shadowy_morn" target="_blank" rel="noopener" aria-label="Oghenetega on Twitter (opens in new tab)">Twitter <span aria-hidden="true">↗</span></a><a href="https://www.behance.net/cytum-designs" target="_blank" rel="noopener" aria-label="Oghenetega on Behance (opens in new tab)">Behance <span aria-hidden="true">↗</span></a></div></div></section>
+<div class="bottom"><p>© <span id="yr">2026</span> dontkno creates. All rights reserved.</p><nav aria-label="Footer"><a href="index.html">Portfolio</a><a href="newsletter.html">Newsletter</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms and conditions</a><a href="cookies.html">Cookie policy</a><button type="button" class="linkbtn js-cookie-settings">Cookie settings</button><a href="#top">Back to top</a></nav></div></footer>
+<script src="analytics.js"></script>
+<script src="consent.js"></script>
+<script src="common.js"></script>
 <script src="newsletter.js"></script>
 </body>
 </html>
