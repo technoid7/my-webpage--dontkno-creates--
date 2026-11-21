@@ -5,12 +5,16 @@
 <title>The dontkno Brief — dontkno creates</title>
 <meta name="description" content="Short, opinionated newsletters on tech and gaming.">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6efe6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0c10" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="styles.css">
+<script src="theme.js"></script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
 <div class="bg"><img src="portrait.jpg" alt=""></div>
-<header><a class="brand" href="index.html"><img src="portrait.jpg" alt="">dontkno creates.</a><nav aria-label="Main"><a href="index.html">Portfolio</a><a href="newsletter.html" class="on" aria-current="page">Newsletter</a><a href="#support">Contact</a></nav></header>
+<header><a class="brand" href="index.html"><img src="portrait.jpg" alt="">dontkno creates.</a><nav aria-label="Main"><a href="index.html">Portfolio</a><a href="newsletter.html" class="on" aria-current="page">Newsletter</a><a href="#support">Contact</a><button type="button" class="themebtn js-theme">Theme: Auto</button></nav></header>
 <main id="main">
 <section><h1>The dontkno Brief</h1><p class="sub">Newsletters on tech and gaming: short, opinionated reads from a designer’s point of view.</p><div class="tabs" id="tabs" role="group" aria-label="Filter issues"></div></section>
 <section><div class="grid" id="issues" aria-live="polite"></div></section>
